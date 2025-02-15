@@ -23,6 +23,13 @@
     gap: 10px;
     font-size: 1rem;
     border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-primary:hover{
+    background: #af184d;
+    box-shadow: 0px 4px 10px rgba(224, 44, 109, 0.5);
+    transform: scale(1.05);
   }
 /* header style */
 .navbar{
@@ -123,8 +130,84 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: -10px 0;
-    
+}
+.popular-btn{
+    width: 1140px;
+    margin: 40px auto;
+    text-align: right;
 
+}
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+}
+/* featured section style */
+.featured-containers{
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.featured-title{
+    color: #0A0826;
+    font-size: 2.50rem;
+    font-weight: 700;
+}
+.featured-dsc{
+    width: 501px;
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+.featured-btn{
+    border-radius: 0px;
+}
+/* footer style */
+.footer-container{
+    background-color: #0A0826;
+    height: 240px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-title{
+    color: #fff;
+    font-size: 1.50rem;
+    font-weight: 700;
+    
+}
+
+.footer-dsc{
+    color: #fff;
+    margin-top: 3px;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer-links a{
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: #363434;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: #fff;
+    background-color: #E02C6D
 }
 /* small device responsive */
 @media screen and (max-width:576px) {
@@ -187,4 +270,27 @@
         padding-bottom: 20px;
 
     }
+    .popular-continer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-btn{
+        width: 100%;
+    }
+    .featured-containers{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 40px;
+    }
+    .featured-content{
+        text-align: center;
+    }
+    .featured-title{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .featured-dsc{
+        width:400px;;
+    }
+
+
 }
